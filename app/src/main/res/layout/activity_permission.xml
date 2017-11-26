@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.baddude.krenovademak.activity.PermissionActivity">
+
+    <TextView
+        android:text="{cmd-alert-circle} Izin aplikasi"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:text="Krenova Demak membutuhkan izin-izin berikut"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="{cmd-access-point} Internet"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="{cmd-database} Akses ke memori"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="{cmd-camera} Kamera"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:onClick="izinclick"
+        android:id="@+id/buttonsimpan"
+        android:layout_marginTop="50dp"
+        android:text="Izinkan"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/buttonback"
+        android:layout_width="190dp"
+        android:layout_height="50dp" />
+
+</LinearLayout>

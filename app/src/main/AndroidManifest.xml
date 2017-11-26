@@ -1,36 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.baddude.krenovademak">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
+        android:name=".AppController"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
-        <activity android:name=".SplashActivity">
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EditAkunActivity" />
-        <activity android:name=".SigninActivity" />
-        <activity android:name=".KreasikuActivity" />
-        <activity android:name=".EditKreasiActivity" />
-        <activity android:name=".PesanActivity" />
-        <activity android:name=".PengumumanActivity" />
-        <activity android:name=".PengumumanAdminActivity" />
-        <activity android:name=".EditPengumumanActivity" />
-        <activity android:name=".UserAdminActivity"></activity>
+        <activity android:name=".activity.edit.EditAkunActivity" />
+        <activity android:name=".activity.edit.EditAkunAdminActivity" />
+        <activity android:name=".activity.SigninActivity" />
+        <activity android:name=".activity.edit.EditKreasiActivity" />
+        <activity android:name=".activity.edit.EditKreasiAdminActivity" />
+        <activity android:name=".activity.edit.EditPengumumanActivity" />
+        <activity android:name=".activity.PermissionActivity" />
+        <activity android:name=".activity.list.KreasikuActivity" />
+        <activity android:name=".activity.list.KelolaAkunActivity" />
+        <activity android:name=".activity.list.PengumumanActivity" />
+        <activity android:name=".activity.TentangActivity" />
+        <activity android:name=".activity.edit.EditMediaActivity" />
+        <activity android:name=".activity.view.ViewAkunActivity" />
+        <activity android:name=".activity.view.ViewKreasiActivity" />
+        <activity android:name=".activity.view.ViewPengumumanActivity" />
+        <activity android:name=".activity.view.ViewMediaActivity" />
+        <activity android:name=".activity.view.ViewImageActivity" />
+        <activity android:name=".activity.view.ViewVideoActivity" />
+        <activity android:name=".activity.edit.BuatKreasiActivity"></activity>
     </application>
 
 </manifest>

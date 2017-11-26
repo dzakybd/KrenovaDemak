@@ -1,9 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.baddude.krenovademak.EditAkunActivity">
+    tools:context="com.baddude.krenovademak.activity.edit.EditAkunActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:onClick="fotoclick"
+                android:id="@+id/foto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/blankprofile" />
+
+            <TextView
+                android:onClick="gantifotoclick"
+                android:id="@+id/buttonfoto"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ganti foto" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginTop="10dp"
+                    android:text="{cmd-email} Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:textColor="@color/colorTextPrimary"
+                    android:id="@+id/fieldemail"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginTop="10dp"
+                    android:text="{cmd-lock} Password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:textColor="@color/colorTextPrimary"
+                    android:id="@+id/fieldpass1"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginTop="10dp"
+                    android:text="{cmd-lock} Konfirmasi password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:textColor="@color/colorTextPrimary"
+                    android:id="@+id/fieldpass2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Konfirmasi password"
+                    android:inputType="textPassword" />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginTop="10dp"
+                    android:text="{cmd-account-card-details} No KTP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/fieldktp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="No KTP"
+                    android:inputType="number"
+                    android:textColor="@color/colorTextPrimary" />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginTop="10dp"
+                    android:text="{cmd-account} Nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:textColor="@color/colorTextPrimary"
+                    android:id="@+id/fieldnama"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nama"
+                    android:inputType="text" />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginTop="10dp"
+                    android:text="{cmd-map-marker} Alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:textColor="@color/colorTextPrimary"
+                    android:id="@+id/fieldalamat"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Alamat"
+                    android:inputType="text" />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginTop="10dp"
+                    android:text="{cmd-briefcase} Pekerjaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:textColor="@color/colorTextPrimary"
+                    android:id="@+id/fieldpekerjaan"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Pekerjaan"
+                    android:inputType="text" />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginTop="10dp"
+                    android:text="{cmd-phone} No HP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:textColor="@color/colorTextPrimary"
+                    android:id="@+id/fieldnohp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="No HP"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonsimpan"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonback"
+                android:onClick="simpanclick"
+                android:text="Simpan"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/hapusakun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:onClick="hapusakunclick"
+                android:text="Hapus akun"
+                android:textColor="@color/colorRed"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

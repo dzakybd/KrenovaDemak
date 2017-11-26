@@ -1,0 +1,43 @@
+<LinearLayout android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginTop="10dp"
+            android:text="{cmd-format-title} Judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColor="@color/colorTextPrimary"
+            android:id="@+id/fieldjudul"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Judul"
+            android:inputType="text" />
+        <TextView
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginTop="10dp"
+            android:text="{cmd-approval} Persetujuaan admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:textColor="@color/colorTextPrimary"
+            android:id="@+id/spinnerstatus"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+        <TextView
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginTop="10dp"
+            android:text="{cmd-sort} Urutkan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:textColor="@color/colorTextPrimary"
+            android:id="@+id/spinnerurut"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+    </LinearLayout>

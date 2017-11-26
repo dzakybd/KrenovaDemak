@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.baddude.krenovademak.activity.edit.EditMediaActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/media"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:onClick="mediaclick"
+            android:src="@drawable/blankprofile" />
+
+        <TextView
+            android:id="@+id/buttonmedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:onClick="pilihmediaclick"
+            android:text="Pilih media"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="{cmd-format-align-justify} Deskripsi"
+                android:textColor="@color/colorTextPrimary" />
+
+            <EditText
+                android:id="@+id/fielddesc"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Deskripsi"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:minLines="1"
+                android:textColor="@color/colorTextPrimary" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonsimpan"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonback"
+            android:onClick="simpanclick"
+            android:text="Simpan"
+            android:textColor="@color/colorWhite" />
+        <TextView
+            android:id="@+id/hapusmedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:onClick="hapusmediaclick"
+            android:text="Hapus media"
+            android:textColor="@color/colorRed"
+            android:textStyle="bold" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

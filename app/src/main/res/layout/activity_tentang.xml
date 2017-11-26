@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.baddude.krenovademak.activity.TentangActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/logocolor" />
+
+        <TextView
+            android:textAlignment="center"
+            android:text="Kreasi dan Inovasi Kabupaten Demak"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:text="Krenova Demak adalah aplikasi yang mengkurasi karya inovasi dari masyarakat Demak, terdiri dari 9 kategori :"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="{cmd-corn} Agribisnis dan pangan"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="{cmd-factory} Rekayasa teknologi dan manufaktur"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="{cmd_pill} Kesehatan, obat-obatan dan kosmetik"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="{cmd_shopping} Kerajinan dan industri rumah tangga"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="{cmd_pine_tree} Kehutanan dan lingkungan hidup"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="{cmd_account_multiple} Sosial dan budaya"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="{cmd-fish} Kelautan dan perikanan"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="{cmd-school} Pendidikan"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="{cmd-flash} Energi"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="{cmd-beach} Pariwisata"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="{cmd_domain} OPD"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:onClick="hubungiadminclick"
+            android:id="@+id/buttonsimpan"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Hubungi Admin"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/buttonback"
+            android:layout_width="190dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

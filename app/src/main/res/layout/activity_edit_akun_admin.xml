@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.baddude.krenovademak.activity.edit.EditAkunAdminActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:onClick="fotoclick"
+                android:id="@+id/foto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/blankprofile" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginTop="10dp"
+                    android:text="{cmd-email} Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:id="@+id/fieldemail"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginTop="10dp"
+                    android:text="{cmd-account-card-details} No KTP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:id="@+id/fieldktp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginTop="10dp"
+                    android:text="{cmd-account} Nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:id="@+id/fieldnama"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginTop="10dp"
+                    android:text="{cmd-map-marker} Alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:id="@+id/fieldalamat"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginTop="10dp"
+                    android:text="{cmd-briefcase} Pekerjaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:id="@+id/fieldpekerjaan"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginTop="10dp"
+                    android:text="{cmd-phone} No HP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/colorTextPrimary"
+                    android:id="@+id/fieldnohp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    />
+                <Switch
+                    android:id="@+id/switchblock"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Blokir akun"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content" />
+                <Switch
+                    android:id="@+id/switchadmin"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Akun admin"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonsimpan"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonback"
+                android:onClick="simpanclick"
+                android:text="Simpan"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
